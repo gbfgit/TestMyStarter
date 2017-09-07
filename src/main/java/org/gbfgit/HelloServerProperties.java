@@ -8,6 +8,7 @@ public class HelloServerProperties {
     private static final String MSG = "world";
     private String msg = MSG;
 
+    //【猜测】Spring在启动时加载class时会根据类上的注解自动进行类的初始化，调用该方法。在读取配置后，再次实例化这个类的对象。
     public String getMsg() {
         System.out.println("return the Properties msg value..." + msg);
         return msg;
